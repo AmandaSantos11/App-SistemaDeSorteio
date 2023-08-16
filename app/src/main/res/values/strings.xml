@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sorteador de Nomes</string>
+    <string name="type_drawn">Escolha o tipo que deseja sortear:</string>
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="pet">Animal</string>
+    <string name="name_drawn">Nome sorteado é:</string>
+    <string name="raffle">Sortear</string>
+
+</resources>
