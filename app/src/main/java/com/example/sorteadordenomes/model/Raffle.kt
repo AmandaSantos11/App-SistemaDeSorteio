@@ -5,24 +5,20 @@ import kotlin.random.Random
 class Raffle{
 
     val database = DataBase()
-
-    private fun raffle(names: ArrayList<String>): String {
-        val randomIndex = Random.nextInt(names.size)
-        return names[randomIndex]
-    }
+    val raffleUseCase = RaffleUseCase()
 
     fun raffleNameFemale():String{
         val namesFemale = database.listOfFemaleNames
-        return raffle(namesFemale)
+        return raffleUseCase.raffle(namesFemale)
     }
 
     fun raffleNameMale():String{
         val namesMale = database.listOfMaleNames
-        return raffle(namesMale)
+        return raffleUseCase.raffle(namesMale)
     }
 
     fun raffleAnimal():String{
         val nameAnimal = database.animalList
-        return raffle(nameAnimal)
+        return raffleUseCase.raffle(nameAnimal)
     }
 }
